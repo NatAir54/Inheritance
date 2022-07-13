@@ -11,6 +11,8 @@ public class Employee {
     public String getName(){ return name; }
     public BigDecimal getSalary(){ return salary; }
 
+
+
     public Employee(String name, BigDecimal salary) {
         if(name==null || salary==null ||  name.trim().equals("") || salary.compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException();
